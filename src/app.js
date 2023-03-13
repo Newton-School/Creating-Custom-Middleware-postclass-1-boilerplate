@@ -4,16 +4,16 @@ const app = express();
 app.use(express.json());
 
 
-//middleWare Function to Add2 to a number
+//Complete below given Middleware function which adds 2 to a number provided in api as params. Example is shown below
+
+//Example: 
+// localhost:3000/?num=10 --> The router should return { num = 12 }
 
 function add2(req, res, next) {
 
     //Write Your Code here
     
 }
-
-//sample Route for Test
-// localhost:3000/?num=10 --> The router should return { num = 12 }
 
 app.get('/', add2, (req, res) => {
     
